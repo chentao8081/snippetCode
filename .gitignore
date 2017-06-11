@@ -1,0 +1,22 @@
+#ignore thumbnails created by windows
+Thumbs.db
+
+# ignore eclipse local files
+.project
+.classpath
+.settings
+/.idea/
+
+# ignore builded files
+target
+bin
+
+# ignore roo log file
+log.roo
+
+# ignore roo auto-gen files
+*.aj
+
+*.orig
+*.log
+*.iml
