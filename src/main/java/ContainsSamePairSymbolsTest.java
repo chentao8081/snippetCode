@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 /**
  * Created by chentao on 08/06/2017.
  */
-public class ContainsSamePairSymbols {
+public class ContainsSamePairSymbolsTest {
     public static void main(String[] args) {
 //        String str1 = "您企业{{企业名称}}}}未能成功开通蜂巢平安交易通";
 //        String str2 = "您企业{{企业名称}}}}}}未能成功开通蜂巢平安交易通";
