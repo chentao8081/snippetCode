@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
  * Created by DELL on 2017/3/10.
  */
 public class MediaUrlValidatorTest {
-    private static final String regEx = "(http(s)?:)?//(?i)\\b((?:[^\\s()<>]+|\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\))+" +
+    private static final String regEx = "(?!\\s)+(http(s)?:)?//(?i)\\b((?:[^\\s()<>]+|\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\))+" +
             "(?:\\(([^\\s()<>]+|(\\([^\\s()<>]+\\)))*\\)|[^\\s`!()\\[\\]{};:\\'\".,<>?«»“”‘’]))";
 
     public static void main(String[] args) {
@@ -24,6 +24,7 @@ public class MediaUrlValidatorTest {
 //        printStr("");
 //        printStr("underfined");
 //        printStr("http:www.fengchao.xxx.s/dddl/123.jpg");
+        printStr("");
         printStr("null");
         printStr("null//fengchaoli-platform-dev.oss-cn-shenzhen.fengchaoli.com/20170509172221JEb16AvS.png");
         printStr("//fengchaoli-platform-dev.oss-cn-shenzhen.fengchaoli.com/20170509172221JEb16AvS.png");

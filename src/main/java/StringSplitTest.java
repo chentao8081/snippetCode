@@ -10,20 +10,21 @@ import java.util.List;
  */
 public class StringSplitTest {
     public static void main(String[] args) {
-        String entpRoles = ",111111111111,,222222222, , 33333333333333";
-        String[] roleIdArr = StringUtils.split(entpRoles, ",");
-        List<String> roleIds = new ArrayList<String>();
-        for (String role : roleIdArr) {
-            System.out.println(role);
+//        String entpRoles = ",111111111111,,222222222, , 33333333333333";
+        String str = "你已成功绑定蜂巢里帐号,{{帐号}},你可以在微信上接受蜂巢里的通知,如需解绑，请在网页上进行操作 如需解绑1，请在网页上进行操作1";
+        String[] strArr = StringUtils.split(str, ",");
+        List<String> strs = new ArrayList<String>();
+        for (String string : strArr) {
+            System.out.println(string);
         }
-        for (String roleId : roleIdArr) {
-            if (org.apache.commons.lang3.StringUtils.isNotBlank(roleId)) {
-                if (existRole(roleId)) {
-                    roleIds.add(roleId);
-                }
-            }
-        }
-        System.out.println(roleIds);
+//        for (String str1 : strArr) {
+//            if (org.apache.commons.lang3.StringUtils.isNotBlank(str1)) {
+//                if (existRole(str1)) {
+//                    strs.add(str1);
+//                }
+//            }
+//        }
+//        System.out.println(strs);
     }
 
     private static boolean existRole(String roleId) {
