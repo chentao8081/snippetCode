@@ -1,4 +1,4 @@
-import org.apache.commons.collections.CollectionUtils;
+import com.xiaoleilu.hutool.util.CollectionUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,6 @@ public class CollectionContainsTest {
         List<String> mRoleList = new ArrayList<String>();
         mRoleList.add("111");
 
-        System.out.println(CollectionUtils.containsAny(roleList, mRoleList));
+        System.out.println(CollectionUtil.containsAny(roleList, mRoleList));
     }
 }
