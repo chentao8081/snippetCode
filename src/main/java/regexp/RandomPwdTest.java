@@ -1,4 +1,6 @@
-import com.xiaoleilu.hutool.util.StrUtil;
+package regexp;
+
+import cn.hutool.core.util.StrUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-import com.xiaoleilu.hutool.util.ReUtil;
+import cn.hutool.core.util.ReUtil;
 
 /**
  * Created by DELL on 2017/3/28.

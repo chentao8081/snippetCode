@@ -1,4 +1,4 @@
-import com.xiaoleilu.hutool.util.StrUtil;
+import cn.hutool.core.util.StrUtil;
 
 public class CollectionUtilsContainsTest {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package java8;
+
 import java.util.function.Supplier;
 
 public class Jave8ImplementsTest {

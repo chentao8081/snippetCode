@@ -1,4 +1,4 @@
-import com.xiaoleilu.hutool.util.CollectionUtil;
+import cn.hutool.core.collection.CollectionUtil;
 
 import java.util.ArrayList;
 import java.util.List;
