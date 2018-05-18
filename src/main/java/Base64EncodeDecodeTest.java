@@ -3,9 +3,12 @@ import java.util.Base64;
 
 public class Base64EncodeDecodeTest {
     public static void main(String[] args) {
-        String encodedStr = base64Encoder("tony test~~");
-        System.out.println(encodedStr);
+        String plainStr = "tony test~~";
+        String encodedStr = "NDQ1NUBxcS5jb206dGVzdDEyMzQ=";
+        String encodedStr2 = "YWRtaW46dGVzdDEyMzQ=";
+        System.out.println(base64Encoder(plainStr));
         System.out.println(base64Decoder(encodedStr));
+        System.out.println(base64Decoder(encodedStr2));
     }
 
     /**

@@ -29,8 +29,7 @@ public class LambdaListToMapTest {
         List<String> dataList = new ArrayList<>();
         dataList.add("aaa");
         dataList.add("bbb");
-        String paramStr = dataList.stream().map(data -> String.valueOf(data)).collect(Collectors.
-                joining("√"));
+        String paramStr = dataList.stream().map(data -> String.valueOf(data)).collect(Collectors.joining("√"));
         System.out.println("paramStr: " + paramStr);
 
 
