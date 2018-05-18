@@ -1,4 +1,6 @@
-import org.apache.commons.lang3.StringUtils;
+package regexp;
+
+import cn.hutool.core.util.StrUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -56,7 +58,7 @@ public class RandomPwdTest {
             }
         }
         if (String.class.isAssignableFrom(number.getClass())) {
-            if (StringUtils.isEmpty((String)number) || ((String)number).length() > 255) {
+            if (StrUtil.isEmpty((String)number) || ((String)number).length() > 255) {
                 return false;
             }
         }

@@ -1,17 +1,15 @@
+package regexp;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by DELL on 2017/4/5.
- */
-public class PostalCodeTest {
+public class RegExpDotText {
     public static void main(String[] args) {
         printStr("");
-        printStr("1");
-        printStr("d");
-        printStr("123456");
-        printStr("1234567");
-        printStr("12345d");
+        printStr("@");
+        printStr("@@@");
+        printStr("123@123.com");
+        printStr("我@我.");
     }
 
     private static void printStr(String str) {
@@ -21,7 +19,7 @@ public class PostalCodeTest {
     }
 
     private static boolean patternMatch(String str) {
-        Pattern r = Pattern.compile("^[\\d]{6}$");
+        Pattern r = Pattern.compile("^(?=.*@)(?=.*\\.).{3,60}$");
         Matcher m = r.matcher(str);
         return m.find();
     }

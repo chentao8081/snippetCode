@@ -1,6 +1,8 @@
-import org.apache.commons.lang3.StringUtils;
-import sun.misc.BASE64Decoder;
+package regexp;
 
+import cn.hutool.core.util.StrUtil;
+
+import java.util.Base64;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,7 +27,7 @@ public class PwdTest {
     }
 
     private static boolean patternMatch(String value) {
-        if (StringUtils.isBlank(value)) {
+        if (StrUtil.isBlank(value)) {
             return false;
         }
         Pattern pattern = Pattern.compile(regEx);
@@ -45,8 +47,7 @@ public class PwdTest {
         return true;
     }
 
-    private static String base64Decoder(String dest) throws Exception {
-        BASE64Decoder decoder = new BASE64Decoder();
-        return new String(decoder.decodeBuffer(dest), "utf-8");
+    private static String base64Decoder(String encodedStr) throws Exception {
+        return new String(Base64.getDecoder().decode(encodedStr), "utf-8");
     }
 }
